@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Secret Party gizlilik manifesti (Apple Privacy Manifest).
+  - İzleme (tracking) yok, izleme alan adı yok.
+  - Hiçbir veri toplanmaz (cihaz dışına veri gönderilmez).
+  - Required reason API: oyuncu geçmişi ve tercihler uygulamanın kendi
+    UserDefaults alanında tutulur (CA92.1: yalnızca uygulamanın kendisinin
+    erişebildiği bilgiyi okuma/yazma). Eklentiler (shared_preferences,
+    url_launcher, wakelock_plus, package_info_plus) kendi manifestlerini taşır.
+-->
+<plist version="1.0">
+<dict>
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

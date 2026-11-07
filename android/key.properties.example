@@ -1,0 +1,8 @@
+# Bu dosyayı "key.properties" adıyla kopyalayıp kendi değerlerinizi yazın.
+# key.properties ve .jks dosyası git'e EKLENMEZ (android/.gitignore).
+# Anahtarı ve parolaları güvenli bir yerde YEDEKLEYİN: kaybederseniz
+# (Play App Signing kullanmıyorsanız) uygulamayı güncelleyemezsiniz.
+storePassword=PAROLANIZ
+keyPassword=PAROLANIZ
+keyAlias=upload
+storeFile=C:/Users/KULLANICI/upload-keystore.jks
